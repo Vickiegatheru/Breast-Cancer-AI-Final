@@ -14,6 +14,10 @@ import {
 	X,
 	Sun,
 	Moon,
+	ChartPie,
+	Plus,
+	Microscope,
+	Fullscreen,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -29,7 +33,10 @@ export default function Sidebar() {
 	if (!session) return null;
 
 	const links = [
-		{ name: "New Scan", href: "/", icon: Activity },
+		{ name: "Dashboard", href: "/", icon: ChartPie },
+		{ name: "Ultrasound", href: "/", icon: Microscope },
+		{ name: "Mammogram", href: "/", icon: Fullscreen },
+
 		{ name: "History", href: "/history", icon: History },
 	];
 
@@ -93,7 +100,7 @@ export default function Sidebar() {
 				</nav>
 
 				<div className="mt-auto space-y-4">
-					{/* Theme Toggle */}
+					{/* Theme Toggle 
 					<button
 						onClick={toggleTheme}
 						className="flex items-center gap-4 px-4 py-3 w-full rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors">
@@ -109,6 +116,7 @@ export default function Sidebar() {
 							</>
 						)}
 					</button>
+         					 */}
 
 					<div className="pt-4 border-t border-pink-100/50 dark:border-pink-500/10">
 						<div className="flex items-center gap-3 mb-4">
