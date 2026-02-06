@@ -1,1 +1,31 @@
 test_imgs/*
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js Build Output
+.next/
+out/
+build/
+
+# Python/AI (If you have a backend)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.env.local
+.env.production
+
+# Images/Data (Large files shouldn't be on Git)
+*.mammogram
+*.ultrasound
+dataset/
+temp_images/
+
+# System files
+.DS_Store
+Thumbs.db
